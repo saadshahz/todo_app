@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- user input -->
+        <div class="container">
+                    <!-- budget -->
+            <div class="sub-container">
+                <h2>Budget</h2>
+                <input type="number" id="budget" placeholder="Enter budget">
+                <button id="submit" id="check_amount" onclick="setbudget()">Set Budget</button>
+            </div>
+                    <!-- Product detail -->
+            <div class="sub-container" >
+                <h2>EXPENSES</h2>
+                <input type="text" id="title-expense" placeholder="Enter the Title of Product">
+                <input type="number" id="cost" placeholder="Enter the Cost of Product">
+                <input type="date" id="date" >
+                <button id="submit" id="check_amount" onclick="checkAmount()">Check Amount</button>
+            </div>
+        </div>
+                <!-- expenditure -->
+        <div class="output">
+            <div>
+                <p>Total Budget</p>
+                <span id="total-amount">0</span>
+            </div>
+            <div>
+                <p>Expenses</p>
+                <span id="expeneses">0</span>
+            </div>
+            <div>
+                <p>Balance</p>
+                <span id="Balance">0</span>
+            </div>
+        </div>
+
+                    <!-- list -->
+
+        <div class="list"><h2>Expense List</h2>
+            <div class="list_container" id="list">
+              
+                <!-- <div id="detai">
+                    <h3>DESCRIPTION</h3>
+                </div>
+
+                <div id="date_output">
+                    <h3>DATE</h3>
+                </div>
+
+                <div id="cost_output">
+                    <h3>COST</h3>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
